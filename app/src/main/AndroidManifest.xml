@@ -16,8 +16,17 @@
       </intent-filter>
     </activity>
     <activity
-        android:name=".TextVisibilityActivity"
+        android:name=".textvisibility.TextVisibilityActivity"
         android:label="@string/title_activity_text_visibility"
+        android:parentActivityName=".MainActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
+    </activity>
+    <activity
+        android:name=".listviewclick.ListItemClickActivity"
+        android:label="@string/title_activity_list_item_click"
         android:parentActivityName=".MainActivity"
         android:theme="@style/AppTheme.NoActionBar">
       <meta-data
