@@ -1,0 +1,55 @@
+apply plugin: "com.android.application"
+
+android {
+  compileSdkVersion 24
+  buildToolsVersion "24.0.0"
+
+  defaultConfig {
+    applicationId "io.github.tonyshkurenko.espressosetup"
+    minSdkVersion 15
+    targetSdkVersion 24
+    versionCode 1
+    versionName "1.0"
+
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+    }
+  }
+}
+
+dependencies {
+
+  def androidVer = "24.1.1"
+  compile "com.android.support:appcompat-v7:${androidVer}"
+  compile "com.android.support:design:${androidVer}"
+  compile "com.android.support:recyclerview-v7:${androidVer}"
+
+  def espressoVer = "2.2.2"
+  androidTestCompile("com.android.support.test.espresso:espresso-core:${espressoVer}") {
+    // Necessary if your app targets Marshmallow (since Espresso
+    // hasn"t moved to Marshmallow yet)
+    exclude group: "com.android.support", module: "support-annotations"
+  }
+
+  androidTestCompile("com.android.support.test.espresso:espresso-contrib:${espressoVer}") {
+    exclude group: "com.android.support", module: "support-annotations"
+    exclude group: "com.android.support", module: "appcompat-v7"
+    exclude group: "com.android.support", module: "support-v4"
+    exclude group: "com.android.support", module: "support-v13"
+    exclude group: "com.android.support", module: "design"
+    exclude group: "com.android.support", module: "recyclerview-v7"
+  }
+
+  def androidTestVer = "0.5"
+  androidTestCompile("com.android.support.test:runner:${androidTestVer}") {
+    exclude group: "com.android.support", module: "support-annotations"
+  }
+
+  androidTestCompile("com.android.support.test:rules:${androidTestVer}") {
+    exclude module: "support-annotations"
+  }
+}
