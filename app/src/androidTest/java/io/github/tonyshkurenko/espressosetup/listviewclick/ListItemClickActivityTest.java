@@ -74,10 +74,6 @@ import static org.hamcrest.core.AllOf.allOf;
         .check(matches(withToolbarTitle(is(mStringArray[2]))));
   }
 
-  private static ViewInteraction matchToolbarTitle(String title) {
-    return onView(isAssignableFrom(Toolbar.class)).check(matches(withToolbarTitle(is(title))));
-  }
-
   private static Matcher<Object> withToolbarTitle(final Matcher<String> textMatcher) {
     return new BoundedMatcher<Object, Toolbar>(Toolbar.class) {
       @Override public boolean matchesSafely(Toolbar toolbar) {

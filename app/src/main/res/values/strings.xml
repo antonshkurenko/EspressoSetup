@@ -3,7 +3,7 @@
   <string name="title_activity_text_visibility">TextVisibilityActivity</string>
   <string name="title_activity_list_item_click">ListItemClickActivity</string>
 
-  <string-array name="dummy_data" >
+  <string-array name="dummy_data">
     <item>One</item>
     <item>Two</item>
     <item>Three</item>
@@ -15,4 +15,6 @@
     <item>Nine</item>
     <item>Ten</item>
   </string-array>
+  <string name="title_activity_enter_text">EnterTextActivity</string>
+  <string name="title_activity_dialog">DialogActivity</string>
 </resources>

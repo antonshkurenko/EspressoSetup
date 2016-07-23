@@ -33,6 +33,24 @@
           android:name="android.support.PARENT_ACTIVITY"
           android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
     </activity>
+    <activity
+        android:name=".entertext.EnterTextActivity"
+        android:label="@string/title_activity_enter_text"
+        android:parentActivityName=".MainActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
+    </activity>
+    <activity
+        android:name=".dialog.DialogActivity"
+        android:label="@string/title_activity_dialog"
+        android:parentActivityName=".MainActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
+    </activity>
   </application>
 
 </manifest>
