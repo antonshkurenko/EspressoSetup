@@ -17,4 +17,5 @@
   </string-array>
   <string name="title_activity_enter_text">EnterTextActivity</string>
   <string name="title_activity_dialog">DialogActivity</string>
+  <string name="title_activity_recycler_view">RecyclerViewActivity</string>
 </resources>

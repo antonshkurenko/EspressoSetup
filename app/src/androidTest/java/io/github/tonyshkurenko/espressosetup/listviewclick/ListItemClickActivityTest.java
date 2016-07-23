@@ -8,6 +8,7 @@ import android.support.test.runner.AndroidJUnit4;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 import io.github.tonyshkurenko.espressosetup.R;
+import io.github.tonyshkurenko.espressosetup.Utils;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.junit.Before;
@@ -57,9 +58,7 @@ import static org.hamcrest.core.AllOf.allOf;
         .inAdapterView(withId(R.id.list_view)) // Specify the explicit id of the ListView
         .perform(click()); // Standard ViewAction
 
-    onView(withText(mStringArray[2])).inRoot(
-        withDecorView(not(mActivityRule.getActivity().getWindow().getDecorView())))
-        .check(matches(isDisplayed()));
+    Utils.checkToast(mActivityRule.getActivity(), mStringArray[2]);
   }
 
   @Test public void testOnItemClick_byId() throws Exception {

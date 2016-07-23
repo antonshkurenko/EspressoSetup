@@ -51,6 +51,15 @@
           android:name="android.support.PARENT_ACTIVITY"
           android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
     </activity>
+    <activity
+        android:name=".recyclerviewclick.RecyclerViewActivity"
+        android:label="@string/title_activity_recycler_view"
+        android:parentActivityName=".MainActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
+    </activity>
   </application>
 
 </manifest>
