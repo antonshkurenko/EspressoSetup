@@ -1,9 +1,12 @@
 package io.github.tonyshkurenko.espressosetup.entertext;
 
+import android.support.test.filters.SmallTest;
 import android.support.test.rule.ActivityTestRule;
+import android.support.test.runner.AndroidJUnit4;
 import io.github.tonyshkurenko.espressosetup.R;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.typeText;
@@ -18,7 +21,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
  * Code style: SquareAndroid (https://github.com/square/java-code-styles)
  * Follow me: @tonyshkurenko
  */
-public class EnterTextActivityTest {
+@RunWith(AndroidJUnit4.class) @SmallTest public class EnterTextActivityTest {
 
   private static final String TEST_STRING = "test string";
 

@@ -44,6 +44,11 @@ dependencies {
     exclude group: "com.android.support", module: "recyclerview-v7"
   }
 
+  /*androidTestCompile('com.android.support.test.espresso:espresso-intents:${espressoVer}') {
+    // Necessary to avoid version conflicts
+    exclude group: 'com.android.support', module: 'support-annotations'
+  }*/
+
   def androidTestVer = "0.5"
   androidTestCompile("com.android.support.test:runner:${androidTestVer}") {
     exclude group: "com.android.support", module: "support-annotations"

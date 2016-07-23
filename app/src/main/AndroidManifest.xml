@@ -60,6 +60,24 @@
           android:name="android.support.PARENT_ACTIVITY"
           android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
     </activity>
+    <activity
+        android:name=".cameraintent.CameraIntentActivity"
+        android:label="@string/title_activity_camera_intent"
+        android:parentActivityName=".MainActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
+    </activity>
+    <activity
+        android:name=".activitywithparam.WithIntentParamsActivity"
+        android:label="@string/title_activity_with_intent_params"
+        android:parentActivityName=".MainActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
+    </activity>
   </application>
 
 </manifest>

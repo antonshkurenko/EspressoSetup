@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import io.github.tonyshkurenko.espressosetup.activitywithparam.WithIntentParamsActivity;
+import io.github.tonyshkurenko.espressosetup.cameraintent.CameraIntentActivity;
 import io.github.tonyshkurenko.espressosetup.dialog.DialogActivity;
 import io.github.tonyshkurenko.espressosetup.entertext.EnterTextActivity;
 import io.github.tonyshkurenko.espressosetup.listviewclick.ListItemClickActivity;
@@ -21,7 +23,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
       new Demo("List item click activity", ListItemClickActivity.class),
       new Demo("Enter text activity", EnterTextActivity.class),
       new Demo("Dialog activity", DialogActivity.class),
-      new Demo("Recycler view activity", RecyclerViewActivity.class)
+      new Demo("Recycler view activity", RecyclerViewActivity.class),
+      new Demo("Camera intent activity", CameraIntentActivity.class),
+      new Demo("With intent params activity", WithIntentParamsActivity.class,
+          WithIntentParamsActivity.DEFAULT_EXTRAS)
   };
 
   @Override protected void onCreate(Bundle savedInstanceState) {
@@ -39,16 +44,30 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
   }
 
   @Override public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-    startActivity(new Intent(this, DEMOS[position].activity));
+
+    final Demo demo = DEMOS[position];
+    final Intent intent = new Intent(this, demo.activity);
+
+    if (demo.extras != null) {
+      startActivity(intent.putExtras(demo.extras));
+    }
+
+    startActivity(intent);
   }
 
   static class Demo {
     final String name;
     final Class<? extends Activity> activity;
+    final Bundle extras;
 
     public Demo(String name, Class<? extends Activity> activity) {
+      this(name, activity, null);
+    }
+
+    public Demo(String name, Class<? extends Activity> activity, Bundle extras) {
       this.name = name;
       this.activity = activity;
+      this.extras = extras;
     }
 
     @Override public String toString() {
