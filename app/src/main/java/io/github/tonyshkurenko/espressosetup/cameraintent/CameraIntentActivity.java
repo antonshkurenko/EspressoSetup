@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.ImageView;
 import io.github.tonyshkurenko.espressosetup.R;
 
-// todo(@tonyshkurenko), 7/23/16: finish this later
 public class CameraIntentActivity extends AppCompatActivity {
 
   static final int REQUEST_IMAGE_CAPTURE = 1;

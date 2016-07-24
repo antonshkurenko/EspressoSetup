@@ -20,4 +20,7 @@
   <string name="title_activity_recycler_view">RecyclerViewActivity</string>
   <string name="title_activity_camera_intent">CameraIntentActivity</string>
   <string name="title_activity_with_intent_params">WithIntentParamsActivity</string>
+  <string name="title_activity_start_new">StartNewActivity</string>
+  <string name="title_activity_second">SecondActivity</string>
+  <string name="second_activity">Second activity</string>
 </resources>

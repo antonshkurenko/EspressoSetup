@@ -78,6 +78,24 @@
           android:name="android.support.PARENT_ACTIVITY"
           android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
     </activity>
+    <activity
+        android:name=".startnewactivity.StartNewActivity"
+        android:label="@string/title_activity_start_new"
+        android:parentActivityName=".MainActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
+    </activity>
+    <activity
+        android:name=".startnewactivity.SecondActivity"
+        android:label="@string/title_activity_second"
+        android:parentActivityName=".startnewactivity.StartNewActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="io.github.tonyshkurenko.espressosetup.startnewactivity.StartNewActivity"/>
+    </activity>
   </application>
 
 </manifest>
