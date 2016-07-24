@@ -14,8 +14,10 @@ import io.github.tonyshkurenko.espressosetup.dialog.DialogActivity;
 import io.github.tonyshkurenko.espressosetup.entertext.EnterTextActivity;
 import io.github.tonyshkurenko.espressosetup.listviewclick.ListItemClickActivity;
 import io.github.tonyshkurenko.espressosetup.recyclerviewclick.RecyclerViewActivity;
+import io.github.tonyshkurenko.espressosetup.startnewactivity.StartNewActivity;
 import io.github.tonyshkurenko.espressosetup.textvisibility.TextVisibilityActivity;
 
+// todo(@tonyshkurenko), 7/24/16: okhttp idling resource
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
   static final Demo[] DEMOS = new Demo[] {
@@ -26,7 +28,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
       new Demo("Recycler view activity", RecyclerViewActivity.class),
       new Demo("Camera intent activity", CameraIntentActivity.class),
       new Demo("With intent params activity", WithIntentParamsActivity.class,
-          WithIntentParamsActivity.DEFAULT_EXTRAS)
+          WithIntentParamsActivity.DEFAULT_EXTRAS),
+      new Demo("Start second activity", StartNewActivity.class)
   };
 
   @Override protected void onCreate(Bundle savedInstanceState) {
