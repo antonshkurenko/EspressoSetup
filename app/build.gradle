@@ -28,19 +28,8 @@ dependencies {
   compile "com.android.support:design:${androidVer}"
   compile "com.android.support:recyclerview-v7:${androidVer}"
 
-  // ***
-  // test compiles
-  // ***
-
-  // robolectric
-  testCompile "org.robolectric:robolectric:3.1.1"
-
   // junit
   testCompile "junit:junit:4.12"
-
-  // ***
-  // android test compiles
-  // ***
 
   def espressoVer = "2.2.2"
   androidTestCompile("com.android.support.test.espresso:espresso-core:${espressoVer}") {
