@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="io.github.tonyshkurenko.espressosetup.dialog.DialogActivity"
+    tools:context="io.github.tonyshkurenko.testsetup.dialog.DialogActivity"
     >
 
   <android.support.design.widget.AppBarLayout

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="io.github.tonyshkurenko.espressosetup.entertext.EnterTextActivity"
+    tools:context="io.github.tonyshkurenko.testsetup.entertext.EnterTextActivity"
     >
 
   <android.support.design.widget.AppBarLayout

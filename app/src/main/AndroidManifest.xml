@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.github.tonyshkurenko.espressosetup">
+    package="io.github.tonyshkurenko.testsetup">
 
   <application
       android:allowBackup="true"
@@ -8,7 +8,7 @@
       android:label="@string/app_name"
       android:supportsRtl="true"
       android:theme="@style/AppTheme">
-    <activity android:name=".MainActivity">
+    <activity android:name="io.github.tonyshkurenko.testsetup.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
 
@@ -16,85 +16,85 @@
       </intent-filter>
     </activity>
     <activity
-        android:name=".textvisibility.TextVisibilityActivity"
+        android:name="io.github.tonyshkurenko.testsetup.textvisibility.TextVisibilityActivity"
         android:label="@string/title_activity_text_visibility"
-        android:parentActivityName=".MainActivity"
+        android:parentActivityName="io.github.tonyshkurenko.testsetup.MainActivity"
         android:theme="@style/AppTheme.NoActionBar">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
+          android:value="io.github.tonyshkurenko.testsetup.MainActivity"/>
     </activity>
     <activity
-        android:name=".listviewclick.ListItemClickActivity"
+        android:name="io.github.tonyshkurenko.testsetup.listviewclick.ListItemClickActivity"
         android:label="@string/title_activity_list_item_click"
-        android:parentActivityName=".MainActivity"
+        android:parentActivityName="io.github.tonyshkurenko.testsetup.MainActivity"
         android:theme="@style/AppTheme.NoActionBar">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
+          android:value="io.github.tonyshkurenko.testsetup.MainActivity"/>
     </activity>
     <activity
-        android:name=".entertext.EnterTextActivity"
+        android:name="io.github.tonyshkurenko.testsetup.entertext.EnterTextActivity"
         android:label="@string/title_activity_enter_text"
-        android:parentActivityName=".MainActivity"
+        android:parentActivityName="io.github.tonyshkurenko.testsetup.MainActivity"
         android:theme="@style/AppTheme.NoActionBar">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
+          android:value="io.github.tonyshkurenko.testsetup.MainActivity"/>
     </activity>
     <activity
-        android:name=".dialog.DialogActivity"
+        android:name="io.github.tonyshkurenko.testsetup.dialog.DialogActivity"
         android:label="@string/title_activity_dialog"
-        android:parentActivityName=".MainActivity"
+        android:parentActivityName="io.github.tonyshkurenko.testsetup.MainActivity"
         android:theme="@style/AppTheme.NoActionBar">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
+          android:value="io.github.tonyshkurenko.testsetup.MainActivity"/>
     </activity>
     <activity
-        android:name=".recyclerviewclick.RecyclerViewActivity"
+        android:name="io.github.tonyshkurenko.testsetup.recyclerviewclick.RecyclerViewActivity"
         android:label="@string/title_activity_recycler_view"
-        android:parentActivityName=".MainActivity"
+        android:parentActivityName="io.github.tonyshkurenko.testsetup.MainActivity"
         android:theme="@style/AppTheme.NoActionBar">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
+          android:value="io.github.tonyshkurenko.testsetup.MainActivity"/>
     </activity>
     <activity
-        android:name=".cameraintent.CameraIntentActivity"
+        android:name="io.github.tonyshkurenko.testsetup.cameraintent.CameraIntentActivity"
         android:label="@string/title_activity_camera_intent"
-        android:parentActivityName=".MainActivity"
+        android:parentActivityName="io.github.tonyshkurenko.testsetup.MainActivity"
         android:theme="@style/AppTheme.NoActionBar">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
+          android:value="io.github.tonyshkurenko.testsetup.MainActivity"/>
     </activity>
     <activity
-        android:name=".activitywithparam.WithIntentParamsActivity"
+        android:name="io.github.tonyshkurenko.testsetup.activitywithparam.WithIntentParamsActivity"
         android:label="@string/title_activity_with_intent_params"
-        android:parentActivityName=".MainActivity"
+        android:parentActivityName="io.github.tonyshkurenko.testsetup.MainActivity"
         android:theme="@style/AppTheme.NoActionBar">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
+          android:value="io.github.tonyshkurenko.testsetup.MainActivity"/>
     </activity>
     <activity
-        android:name=".startnewactivity.StartNewActivity"
+        android:name="io.github.tonyshkurenko.testsetup.startnewactivity.StartNewActivity"
         android:label="@string/title_activity_start_new"
-        android:parentActivityName=".MainActivity"
+        android:parentActivityName="io.github.tonyshkurenko.testsetup.MainActivity"
         android:theme="@style/AppTheme.NoActionBar">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value="io.github.tonyshkurenko.espressosetup.MainActivity"/>
+          android:value="io.github.tonyshkurenko.testsetup.MainActivity"/>
     </activity>
     <activity
-        android:name=".startnewactivity.SecondActivity"
+        android:name="io.github.tonyshkurenko.testsetup.startnewactivity.SecondActivity"
         android:label="@string/title_activity_second"
-        android:parentActivityName=".startnewactivity.StartNewActivity"
+        android:parentActivityName="io.github.tonyshkurenko.testsetup.startnewactivity.StartNewActivity"
         android:theme="@style/AppTheme.NoActionBar">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value="io.github.tonyshkurenko.espressosetup.startnewactivity.StartNewActivity"/>
+          android:value="io.github.tonyshkurenko.testsetup.startnewactivity.StartNewActivity"/>
     </activity>
   </application>
 
